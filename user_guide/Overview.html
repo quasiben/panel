@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta charset="utf-8"/>
+<title>Overview — Panel 0.5.1 documentation</title>
+<meta content="High-level dashboarding for python visualization libraries" name="description"/>
+<meta content="Panel contributors" name="author"/>
+<!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+<script>
+    WebFont.load({
+      google: {
+        families: ['Source Sans Pro']
+      }
+    });
+  </script>
+<!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link href="../_static/site.css" rel="stylesheet"/>
+<link href="../_static/nbsite.css" rel="stylesheet"/>
+<!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+</script>
+<script src="../_static/js/main.js"></script>
+<script src="../_static/nbsite.js"></script>
+<script src="../_static/require.js"></script>
+<!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link href="../_static/favicon.ico" rel="icon" type="image/png"/>
+<!-- Canonical
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link href="https://panel.pyviz.org/user_guide/Overview.html" rel="canonical">
+</link></head>
+<body class="">
+<header class="navigation">
+<div class="wrapper">
+<a class="logo" href="../index.html">
+<img alt="Logo" src="../_static/logo_horizontal.png"/>
+</a>
+<a class="navigation-menu-button" href="javascript:void(0)" id="js-mobile-menu">Menu</a>
+<nav>
+<ul class="navigation-menu show" id="js-navigation-menu">
+<li class="nav-link doc-head"><a href="//gitter.im/pyviz/pyviz">Gitter</a></li>
+<li class="nav-link doc-head"><a href="//github.com/pyviz/panel">Github</a></li>
+<li class="nav-link">
+<div style="display:inline-block;vertical-align: middle;">
+<div class="search-bar">
+<form action="../search.html" method="get" role="search">
+<input name="q" placeholder="Search" type="search"/>
+<button type="submit">
+<img alt="Search Icon" src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon-black.png"/>
+</button>
+</form>
+</div>
+</div>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+<div class="second-nav">
+<nav>
+<ul class="navigation-menu show">
+<li class="nav-link doc-head"><a href="index.html">User Guide</a></li>
+<li class="nav-link doc-head"><a href="../gallery/index.html">Gallery</a></li>
+<li class="nav-link doc-head"><a href="../reference/index.html">Reference Gallery</a></li>
+<li class="nav-link doc-head"><a href="../developer_guide/index.html">Developer Guide</a></li>
+<li class="nav-link doc-head"><a href="../FAQ.html">FAQ</a></li>
+<li class="nav-link doc-head"><a href="../about.html">About</a></li>
+</ul>
+</nav>
+</div>
+<!-- MAIN BODY OF DOCS –––––––––––––––––– -->
+<div class="docs section">
+<div id="hacketyhackhack"> <!-- style="width:20%;margin-right: 100px;"> --> <!--style="display: none;"> style="display:none;"> -->
+<div class="toc" style="width:15%; margin-right:20px;">
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Components.html">Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Customization.html">Customization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Deploy_and_Export.html">Deploy &amp; Export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Widgets.html">Widgets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Interact.html">Interact</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Param.html">Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Links.html">Linking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Pipelines.html">Pipelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Django_Apps.html">Django Apps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/index.html">Reference Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer_guide/index.html">Developer Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://github.com/pyviz/panel">Github source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About</a></li>
+</ul>
+</div>
+</div>
+<div class="content"> <!-- style="max-width:80%;margin-left:auto;margin-right: auto;">-->
+<div class="section" id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In order to get the best use out of this user guide it is important to have a grasp of some core concepts and ideas.</p>
+<h3 id="Components">Components<a class="anchor-link" href="#Components">¶</a></h3><p>Component refers to one of the three types of objects you will ordinarily be working with a <code>Pane</code>, <code>Widget</code> or <code>Panel</code> layout. To get an overview of the basic operation of different components see the <a href="./Components.html">Components user guide</a>.</p>
+<ul>
+<li><p><strong><code>Pane</code></strong>: A <code>Pane</code> object wraps a user supplied object and turns it into a renderable view. When the wrapped <code>object</code> changes or any other parameters changes a pane will update the view accordingly.</p>
+</li>
+<li><p><strong><code>Panel</code></strong>: A <code>Panel</code> layout is a container to arrange multiple components into a visual layout, a Panel may therefore also refer not specifically to the object but the combination of multiple components into a simple app.</p>
+</li>
+<li><p><strong><code>Widget</code></strong>: A <code>Widget</code> is a control component which allows users to provide input to your app or dashboard either in Python or directly in Javascript.</p>
+</li>
+</ul>
+<hr/>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Display-and-rendering">Display and rendering<a class="anchor-link" href="#Display-and-rendering">¶</a></h3><p>Throughout this user guide we will cover a number of ways to display panel objects, including display in the notebook, starting a server from the commandline, saving and embedding and more. For a detailed description see the <a href="./Deploy_and_Export.html">Deploy and Export user guide</a>.</p>
+<h4 id="Notebook">Notebook<a class="anchor-link" href="#Notebook">¶</a></h4><p>The documentation is built using Jupyter notebooks and Panel objects display themselves in a notebook when placed on the last line of a notebook cell.</p>
+<h5 id="pn.extension()"><code>pn.extension()</code><a class="anchor-link" href="#pn.extension()">¶</a></h5><blockquote><p>The panel extension loads BokehJS, any custom models required and optionally custom JS and CSS in Jupyter notebook environments.</p>
+</blockquote>
+<h5 id=".app()"><code>.app()</code><a class="anchor-link" href="#.app()">¶</a></h5><blockquote><p>The <code>.app()</code> method present on all panel objects allows displaying an panel server inline in a notebook.</p>
+</blockquote>
+<h4 id="Python-REPL">Python REPL<a class="anchor-link" href="#Python-REPL">¶</a></h4><p>When working in a Python REPL which does not support rich-media output a panel can be still be launched.</p>
+<h5 id=".show()"><code>.show()</code><a class="anchor-link" href="#.show()">¶</a></h5><blockquote><p>The <code>.show()</code> method is present on all viewable panel objects and starts a server instance and opens a browser window to point to it. When working remotely a specific port to launch the app on can be supplied.</p>
+</blockquote>
+<h4 id="Commandline">Commandline<a class="anchor-link" href="#Commandline">¶</a></h4><p>Panel mirrors bokeh's commandline interface for launching and exporting apps and dashboards.</p>
+<h5 id="panel-serve-app.py"><code>panel serve app.py</code><a class="anchor-link" href="#panel-serve-app.py">¶</a></h5><blockquote><p>The <code>panel serve</code> command allows allows interactively displaying and deploying Panel apps from the commandline.</p>
+</blockquote>
+<h4 id="Export">Export<a class="anchor-link" href="#Export">¶</a></h4><p>When not working interactively a panel object can be exported to a static file.</p>
+<h5 id=".save()"><code>.save()</code><a class="anchor-link" href="#.save()">¶</a></h5><blockquote><p>The <code>.save</code> method present on all viewable panel objects allows saving panel objects to HTML or PNG files.</p>
+</blockquote>
+<h5 id="Embedding">Embedding<a class="anchor-link" href="#Embedding">¶</a></h5><blockquote><p>Embedding refers to the ability of a Panel object to serialize the widget state space into JSON which can be embedded in the notebook or as separate files and allow simple apps to be served without running a server.</p>
+</blockquote>
+<hr/>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Linking-and-callbacks">Linking and callbacks<a class="anchor-link" href="#Linking-and-callbacks">¶</a></h3><p>One of the most important aspects of a general app and dashboarding framework is the ability to link different components in flexible ways and schedule callbacks in response to internal and external events. Panel provides convenient lower and higher-level APIs to achieve both for more details see the <a href="./Links.html">Links</a> and the <a href="./Callbacks.html">Callbacks</a> user guide.</p>
+<h5 id=".param.watch"><code>.param.watch</code><a class="anchor-link" href="#.param.watch">¶</a></h5><blockquote><p>The <code>.param.watch</code> method allows listening to parameter changes on an object using Python callbacks. It is the lowest level API and provides the most amount of control.</p>
+</blockquote>
+<h5 id=".link()"><code>.link()</code><a class="anchor-link" href="#.link()">¶</a></h5><blockquote><p>The <code>.link()</code> method present on all viewable panel objects is a convenient API to link the parameters of two objects together, uni- or bi-directionally.</p>
+</blockquote>
+<h5 id=".jslink()"><code>.jslink()</code><a class="anchor-link" href="#.jslink()">¶</a></h5><blockquote><p>The <code>.jslink()</code> method links the properties of the underlying bokeh models making it possible to define interactivity which works without a running server.</p>
+</blockquote>
+<hr/>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Interfaces">Interfaces<a class="anchor-link" href="#Interfaces">¶</a></h3><p><code>Panel</code> provides three main interfaces for building GUIs and dashboards, each of which has different benefits and drawbacks.</p>
+<h4 id="Component-API"><a href="./Widgets.html">Component API</a><a class="anchor-link" href="#Component-API">¶</a></h4><p>At the lowest level you can build interactive components entirely using <code>Pane</code>, <code>Widget</code> and <code>Panel</code> components. By registering callbacks on components to modify other components provides a huge amount of flexibility in building interactive features but a lot of callbacks can often be difficult to keep track of. In other words this approach affords the most amount of flexibility but can easily grow in complexity. See the <a href="./Widgets.html">Widgets user guide</a></p>
+<h4 id="Param"><a href="./Param.html"><code>Param</code></a><a class="anchor-link" href="#Param">¶</a></h4><p><code>Panel</code> itself is built on the <a href="https://param.pyviz.org">param</a> library which allows expressing parameters on classes entirely independently of any GUI code. By using param to declare the parameters along with methods that depend on those parameters complex GUIs can be encapsulated in tidy, well-organized and declarative way. Panel will automatically convert parameter definition to corresponding widgets. This API requires the use of the param library to express the inputs and encapsulate the computations to be performed but once implemented this approach can lend itself to neat, well encapsulated code. See the <a href="./Param.html">Param user guide</a> for more detail.</p>
+<h4 id="interact"><a href="./Interact.html"><code>interact</code></a><a class="anchor-link" href="#interact">¶</a></h4><p>The <code>interact</code> API will be familiar to ipywidgets users; it provides a very simple API to define an interactive view which depends on a number of arguments. This approach works by declaring functions whose arguments will be inspected to infer a set widgets of widgets to control the display output. This approach makes it extremely easy to get started and even allows re-arranging the widgets and plots in different ways but may not be suited to more complex scenarios. See the <a href="./Interact.html">Interact user guide</a> for more detail.</p>
+</div>
+</div>
+</div>
+<hr class="docutils">
+<p><a class="reference external" href="https://raw.githubusercontent.com/pyviz/panel/master/examples/user_guide/Overview.ipynb">Right click to download this notebook from GitHub.</a></p>
+</hr></div>
+</div>
+</div>
+<!-- END MAIN BODY OF DOCS ––––––––––––– -->
+<footer class="footer">
+<div class="footer-links">
+<ul>
+<li><span class="footer-title">Links</span></li>
+<li><a href="index.html">User Guide</a></li>
+<li><a href="../gallery/index.html">Gallery</a></li>
+<li><a href="../reference/index.html">Reference Gallery</a></li>
+<li><a href="../developer_guide/index.html">Developer Guide</a></li>
+<li><a href="../FAQ.html">FAQ</a></li>
+<li><a href="../about.html">About</a></li>
+</ul>
+<ul>
+<li><span class="footer-title">Join Us</span></li>
+<li><a href="//gitter.im/pyviz/pyviz">Gitter</a></li>
+<li><a href="//github.com/pyviz/panel">Github</a></li>
+</ul>
+<ul class="copyright">
+<li>2018 Panel contributors</li>
+</ul>
+</div>
+</footer>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61554933-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- MathJax Config -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
